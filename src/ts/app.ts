@@ -13,7 +13,7 @@ cart.add(new Movie(1003, 'Test', 500, 2022, 'USA', 'comedy', 'Test!', 130));
 console.log(cart.items);
 console.log(cart.calculateTotalAmount());
 console.log(cart.calculateWithDiscount(20));
-cart.removeItem(1002);
+cart.removeItem(1001);
 console.log(cart.items)
 
 

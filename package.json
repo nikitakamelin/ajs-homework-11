@@ -2,7 +2,7 @@
   "name": "ajs-homeworks-11-typescript",
   "version": "1.0.0",
   "description": "",
-  "main": "app.ts",
+  "main": "index.js",
   "scripts": {
     "watch": "tsc -w",
     "start": "webpack serve --mode development",
