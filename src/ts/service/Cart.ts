@@ -10,13 +10,11 @@ export default class Cart {
 		return [...this._items];
 	}
 	calculateTotalAmount(): number {
-		let sum = 0;
-		this._items.forEach(item => sum += item.price);
+		// let sum = 0;
+		//this._items.forEach(item => sum += item.price);
 
-		//! -- ошибка через reduce --
-		//this._items.reduce((acc, current) => acc + current, 0);
-
-		return sum;
+		//!
+		return this._items.reduce((acc: number, current: Buyable) => acc + current.price, 0);;
 	}
 	calculateWithDiscount(discountPercent: number): number {
 		return this.calculateTotalAmount() - this.calculateTotalAmount() * discountPercent/100;
